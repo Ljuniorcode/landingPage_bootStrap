@@ -38,6 +38,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Utilizar o CSS para complementar nosso trabalho quando o Bootstrap não cobre 100%;
 - Trabalhar com elementos de tamanho fixo, como imagens e formatar textos;
 - Utilizar o Bootstrap para controlar larguras e alturas de margin e padding;
+- Utilizar o componente card do Bootstrap;
+- Adicionando tags semânticas em nosso HTML;
+
 ---
 
 ## 🙅 Instalações e usos
