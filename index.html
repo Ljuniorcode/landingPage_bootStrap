@@ -13,8 +13,8 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">fruta & fruto</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand fonte-titulo texto-cor-especial" href="#">fruta & fruto</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
           <li><a class="nav-link active" href="#">início <span class="sr-only">(current)</span></a></li>
           <li><a class="nav-link" href="#">receitas</a></li>
           <li><a class="nav-link" href="#">quem somos</a></li>
-          <li><a class="nav-link" href="#" tabindex="-1">contato</a></li>
+          <li><a class="nav-link" data-toggle="modal" data-target="#modal-contato" href="#">contato</a></li>
         </ul>
       </div>
     </nav>
@@ -70,7 +70,7 @@
             </div>
           </div>
         </div>
-        
+
         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
@@ -86,13 +86,16 @@
 
     <section id="titulo">
       <h1 class="text-center fonte-titulo cor-especial pt-5">Receitas para economizar e ganhar saúde</h1>
-      <p class="text-center text-secondary pb-5">Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar,
-      ganhar tempo e praticidade</p>
+      <p class="text-center text-secondary pb-5">Nossas receitas ajudam você a aproveitar melhor os alimentos,
+        economizar,
+        ganhar tempo e praticidade</p>
     </section>
 
-      <section id="receitas">
-        <article class="card borda-cor-especial card-largura">
-          <img src="./img/saladaAbacate.jpg" class="card-img-top card-posicao-imagem" alt="tigela com salada de abacate">
+    <section class="container-fluid bg-light" id="receitas">
+      <div class="row justify-content-center">
+        <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
+          <img src="./img/saladaAbacate.jpg" class="card-img-top card-posicao-imagem"
+            alt="tigela com salada de abacate">
           <div class="card-body">
             <h5 class="card-title">Tigela de abacate</h5>
             <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã.</p>
@@ -100,7 +103,7 @@
           </div>
         </article>
 
-        <article class="card borda-cor-especial card-largura">
+        <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
           <img src="./img/salada1.jpg" class="card-img-top card-posicao-imagem" alt="Salada de kiwi">
           <div class="card-body">
             <h5 class="card-title">Salada de kiwi</h5>
@@ -109,7 +112,7 @@
           </div>
         </article>
 
-        <article class="card borda-cor-especial card-largura">
+        <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
           <img src="./img/salada2.jpg" class="card-img-top card-posicao-imagem" alt="Mix de vegetais">
           <div class="card-body">
             <h5 class="card-title">Mix de vegetais</h5>
@@ -118,7 +121,7 @@
           </div>
         </article>
 
-        <article class="card borda-cor-especial card-largura">
+        <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
           <img src="./img/salada4.jpg" class="card-img-top card-posicao-imagem" alt="Pimentões a juliana">
           <div class="card-body">
             <h5 class="card-title">Pimentões a juliana</h5>
@@ -127,7 +130,7 @@
           </div>
         </article>
 
-        <article class="card borda-cor-especial card-largura">
+        <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
           <img src="./img/salada2.jpg" class="card-img-top card-posicao-imagem" alt="Mix de vegetais">
           <div class="card-body">
             <h5 class="card-title">Mix de vegetais</h5>
@@ -136,7 +139,7 @@
           </div>
         </article>
 
-        <article class="card borda-cor-especial card-largura">
+        <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
           <img src="./img/salada4.jpg" class="card-img-top card-posicao-imagem" alt="Pimentões a juliana">
           <div class="card-body">
             <h5 class="card-title">Pimentões a juliana</h5>
@@ -144,10 +147,74 @@
             <a href="#" class="btn botao-cor-especial">Veja a receita</a>
           </div>
         </article>
-      </section>
-    </main>
 
-    <p>contato: <a href="mailto:email@frutafruto.com.br">contato@frutafruto.com.br</a></p>
+        <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
+          <img src="./img/salada4.jpg" class="card-img-top card-posicao-imagem" alt="Pimentões a juliana">
+          <div class="card-body">
+            <h5 class="card-title">Pimentões a juliana</h5>
+            <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã.</p>
+            <a href="#" class="btn botao-cor-especial">Veja a receita</a>
+          </div>
+        </article>
+
+        <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
+          <img src="./img/salada4.jpg" class="card-img-top card-posicao-imagem" alt="Pimentões a juliana">
+          <div class="card-body">
+            <h5 class="card-title">Pimentões a juliana</h5>
+            <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã.</p>
+            <a href="#" class="btn botao-cor-especial">Veja a receita</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-secondary p-3">
+    
+    <p class="text-light m-0 text-center"><img src="./img/mail.svg" alt="icone email">
+      <a class="text-light" href="mailto:email@frutafruto.com.br">rh@frutafruto.com.br</a>
+      <img src="./img/phone.svg" alt="icone phone"> <a class="text-light">(11) 99876-5432</a>
+    </p>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal-contato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <dialog class="modal-content">
+        <header class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </header>
+        <main class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Nome completo</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nome">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Seu email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="seuemail@examplo.com">
+            </div>
+
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Suas sugestões</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="eu acho que..."></textarea>
+            </div>
+          </form>
+        </main>
+        <footer class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn botao-cor-especial">Enviar</button>
+        </footer>
+      </dialog>
+    </div>
+  </div>
+
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
